@@ -1,9 +1,16 @@
 import React, {ButtonHTMLAttributes} from "react";
 import styles from './style.module.scss';
+import cn from "classnames";
 
-const Button: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({ children, ...props }) => {
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    variants?: 'outline' | undefined;
+};
+
+const Button: React.FC<IProps> = ({ variants, children, ...props }) => {
     return (
-        <button className={styles.button}
+        <button className={cn(styles.button, {
+            [styles.outline]: variants === 'outline',
+        })}
                 {...props}
         >
             {children}

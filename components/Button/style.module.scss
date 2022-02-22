@@ -10,4 +10,9 @@
   border: none;
   padding: 16px 36px 14px;
   cursor: pointer;
+
+  &.outline {
+    background: transparent;
+    border: 1px solid #FBFCFE;
+  }
 }
