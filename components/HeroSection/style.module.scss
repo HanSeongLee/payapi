@@ -1,0 +1,49 @@
+
+.heroSection {
+  padding: 32px 0 80px 0;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 24px;
+  }
+
+  .heroImageWrapper {
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+
+    .heroImage {
+      width: 128px;
+    }
+  }
+
+  .title {
+    font-family: DM Serif Display;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: normal;
+    letter-spacing: -0.25px;
+    color: #36536B;
+  }
+
+  .scheduleDemoContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    width: 100%;
+  }
+
+  .questions {
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
