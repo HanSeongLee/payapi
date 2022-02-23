@@ -1,0 +1,46 @@
+
+.footer {
+  position: relative;
+  background: #1B262F;
+  padding: 41px 0 55px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/bg-pattern-circle.svg") no-repeat;
+    background-size: 780px 780px;
+    background-position: 50% 185px;
+    content: "";
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
+  .pageListContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 31px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(251, 252, 254, 0.7);
+  }
+
+  .socialListContainer {
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(251, 252, 254, 0.7);
+  }
+}
