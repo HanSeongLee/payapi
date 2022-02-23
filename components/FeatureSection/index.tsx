@@ -2,7 +2,7 @@ import React from "react";
 import styles from './style.module.scss';
 import FeatureCard from "../../components/FeatureCard";
 import Container from "../Container";
-import ScheduleDemoFormContainer from "../../containers/ScheduleDemoFormContainer";
+import TitledScheduleDemoForm from "../TitledScheduleDemoForm";
 
 const FeatureSection: React.FC = () => {
     return (
@@ -32,12 +32,7 @@ const FeatureSection: React.FC = () => {
                              description={'It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.'}
                 />
 
-                <div className={styles.scheduleDemoFormWrapper}>
-                    <h2 className={styles.title}>
-                        Ready to start?
-                    </h2>
-                    <ScheduleDemoFormContainer className={styles.scheduleDemoContainer}/>
-                </div>
+                <TitledScheduleDemoForm />
             </Container>
         </section>
     );

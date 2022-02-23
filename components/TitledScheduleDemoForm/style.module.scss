@@ -1,0 +1,23 @@
+
+.scheduleDemoFormWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .title {
+    font-family: DM Serif Display;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #36536B;
+    margin-bottom: 32px;
+  }
+
+  .scheduleDemoContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    width: 100%;
+  }
+}
