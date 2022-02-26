@@ -1,0 +1,21 @@
+
+.descriptionCard {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+
+  .title {
+    font-family: DM Serif Display;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #36536B;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+  }
+}
