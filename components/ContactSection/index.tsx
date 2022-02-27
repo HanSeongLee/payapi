@@ -3,7 +3,6 @@ import styles from "./style.module.scss";
 import Container from "../Container";
 import TitledScheduleDemoForm from "../TitledScheduleDemoForm";
 import PartnerContainer from "../../containers/PartnerContainer";
-import ContactForm from "../ContactForm";
 import ContactFormContainer from "../../containers/ContactFormContainer";
 
 const ContactSection: React.FC = () => {
@@ -14,7 +13,9 @@ const ContactSection: React.FC = () => {
                     Submit a help request and we’ll get in touch shortly.
                 </h2>
 
-                <ContactFormContainer />
+                <div className={styles.contactFormContainer}>
+                    <ContactFormContainer/>
+                </div>
 
                 <div className={styles.partnerWrapper}>
                     <h3 className={styles.title}>
