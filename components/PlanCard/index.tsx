@@ -15,16 +15,20 @@ export enum PLAN_BENEFIT {
 
 type IProps = {
     name: string,
+    description: string,
     price: number,
     benefits: PLAN_BENEFIT[],
 };
 
-const PlanCard: React.FC<IProps> = ({ name, price, benefits }) => {
+const PlanCard: React.FC<IProps> = ({ name, description, price, benefits }) => {
     return (
         <div className={styles.planCard}>
             <h3 className={styles.title}>
                 {name}
             </h3>
+            <p className={styles.description}>
+                {description}
+            </p>
             <div>
                 <div className={styles.price}>${price.toFixed(2)}</div>
 

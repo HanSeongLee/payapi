@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .planCard {
 
@@ -9,6 +10,24 @@
     letter-spacing: -0.18px;
     color: #BA4270;
     margin-bottom: 81px;
+
+    @include media(">tablet") {
+      line-height: 40px;
+      letter-spacing: -0.185px;
+      margin-bottom: 13px;
+    }
+  }
+
+  .description {
+    display: none;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+
+    @include media(">tablet") {
+      display: block;
+      margin-bottom: 19px;
+    }
   }
 
   .price {
@@ -19,6 +38,12 @@
     letter-spacing: -0.43px;
     color: #36536B;
     margin-bottom: 24px;
+
+    @include media(">tablet") {
+      font-size: 48px;
+      letter-spacing: -0.37px;
+      margin-bottom: 21px;
+    }
   }
 
   .benefitContainer {
