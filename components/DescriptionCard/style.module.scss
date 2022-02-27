@@ -1,8 +1,15 @@
+@import "styles/utils";
 
 .descriptionCard {
   display: flex;
   flex-direction: column;
   grid-gap: 16px;
+
+  @include media(">tablet") {
+    flex-direction: row;
+    grid-gap: 10px;
+    text-align: left;
+  }
 
   .title {
     font-family: DM Serif Display;
@@ -11,6 +18,13 @@
     line-height: 32px;
     letter-spacing: -0.18px;
     color: #36536B;
+
+    @include media(">tablet") {
+      min-width: 223px;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.25px;
+    }
   }
 
   .description {
