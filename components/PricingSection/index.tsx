@@ -12,9 +12,11 @@ const PricingSection: React.FC = () => {
                     Pricing
                 </h2>
 
-                <PlanContainer />
+                <div className={styles.planContainer}>
+                    <PlanContainer/>
+                </div>
 
-                <TitledScheduleDemoForm />
+                <TitledScheduleDemoForm/>
             </Container>
         </section>
     );
