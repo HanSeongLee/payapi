@@ -1,12 +1,17 @@
+@import "styles/utils";
 
-.pricingSection {
+.aboutSection {
   padding: 48px 0 80px;
   text-align: center;
+
+  @include media(">tablet") {
+    padding: 75px 0 100px;
+  }
 
   .container {
     display: flex;
     flex-direction: column;
-    grid-gap: 48px;
+    grid-gap: 64px;
   }
 
   .title {
@@ -16,10 +21,26 @@
     line-height: 36px;
     letter-spacing: -0.25px;
     color: #36536B;
+
+    @include media(">tablet") {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.37px;
+      margin-bottom: -10px;
+    }
   }
 
-  .thumbnail {
-    width: 100%;
-    margin-top: 28px;
+  .thumbnailContainer {
+    margin: 76px 0 48px;
+    padding: 0;
+    max-width: initial;
+
+    @include media(">tablet") {
+      margin: 92px 0 64px;
+    }
+
+    .thumbnail {
+      width: 100%;
+    }
   }
 }
