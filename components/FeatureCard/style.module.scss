@@ -7,15 +7,44 @@
   text-align: center;
 
   &.large {
+    @include media(">desktop") {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .thumbnail {
+          width: 566px;
+        }
+      }
+
+      &:first-child {
+
+        .thumbnail {
+          width: 445px;
+          background: red;
+        }
+      }
+    }
+
     .thumbnail {
       width: 100%;
       max-width: 392px;
       height: initial;
       filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3));
       margin-bottom: 48px;
+
+      @include media(">desktop") {
+        max-width: initial;
+        margin-bottom: 0;
+      }
     }
 
     .title {
+      font-family: DM Serif Display;
+      font-weight: normal;
       font-size: 36px;
       line-height: 36px;
       letter-spacing: -0.28px;
@@ -29,8 +58,13 @@
     }
 
     .description {
+      width: 445px;
       line-height: 28px;
       max-width: 573px;
+
+      @include media(">desktop") {
+        padding: 0;
+      }
     }
   }
 
@@ -43,6 +77,11 @@
       width: 88px;
       height: 88px;
       margin-bottom: 32px;
+    }
+
+    @include media(">desktop") {
+      width: 106px;
+      height: 106px;
     }
   }
 
@@ -59,5 +98,9 @@
     line-height: 25px;
     letter-spacing: -0.12px;
     color: #6C8294;
+
+    @include media(">desktop") {
+      padding: 0 8px;
+    }
   }
 }

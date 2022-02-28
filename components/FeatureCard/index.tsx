@@ -18,12 +18,14 @@ const FeatureCard: React.FC<IProps> = ({ src, title, description, size }) => {
                  src={src}
                  alt={''}
             />
-            <h2 className={styles.title}>
-                {title}
-            </h2>
-            <p className={styles.description}>
-                {description}
-            </p>
+            <div>
+                <h2 className={styles.title}>
+                    {title}
+                </h2>
+                <p className={styles.description}>
+                    {description}
+                </p>
+            </div>
         </div>
     );
 };
