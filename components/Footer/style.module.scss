@@ -19,6 +19,14 @@
     background-size: 780px 780px;
     background-position: 50% 185px;
     content: "";
+
+    @include media(">tablet") {
+      background-position: top -100px right -370px;
+    }
+
+    @include media(">desktop") {
+      background-position: top -150px right -370px;
+    }
   }
 
   .container {
