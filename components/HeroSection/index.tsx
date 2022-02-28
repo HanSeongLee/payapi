@@ -12,13 +12,15 @@ const HeroSection: React.FC = () => {
                 <div className={styles.heroImageWrapper}>
                     <HeroImage className={styles.heroImage}/>
                 </div>
-                <h2 className={styles.title}>
-                    Start building with our APIs for absolutely free.
-                </h2>
-                <ScheduleDemoFormContainer className={styles.scheduleDemoContainer}/>
-                <p className={styles.questions}>
-                    Have any questions? <Link href={'/contact'}><a>Contact Us</a></Link>
-                </p>
+                <div className={styles.contents}>
+                    <h2 className={styles.title}>
+                        Start building with our APIs for absolutely free.
+                    </h2>
+                    <ScheduleDemoFormContainer className={styles.scheduleDemoContainer}/>
+                    <p className={styles.questions}>
+                        Have any questions? <Link href={'/contact'}><a>Contact Us</a></Link>
+                    </p>
+                </div>
             </Container>
         </section>
     );
