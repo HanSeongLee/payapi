@@ -12,6 +12,10 @@
     padding: 88px 0;
   }
 
+  @include media(">desktop") {
+    text-align: left;
+  }
+
   &::before {
     position: absolute;
     top: 0;
@@ -26,12 +30,21 @@
     @include media(">tablet") {
       background-position: 50% -530px;
     }
+
+    @include media(">desktop") {
+      background-position: top -380px left -240px;
+    }
   }
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media(">desktop") {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
 
   .partnerContainer {
@@ -46,6 +59,10 @@
       width: 536px;
       grid-template-rows: 1fr 1fr;
       margin-bottom: 64px;
+    }
+
+    @include media(">desktop") {
+      margin-bottom: 0;
     }
 
     img {

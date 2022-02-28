@@ -8,18 +8,22 @@ const PartnersSection: React.FC = () => {
     return (
         <section className={styles.partnersSection}>
             <Container className={styles.container}>
-                <PartnerContainer className={styles.partnerContainer} />
+                <PartnerContainer className={styles.partnerContainer}/>
 
-                <h2 className={styles.title}>
-                    Who we work with
-                </h2>
-                <p className={styles.description}>
-                    Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.
-                </p>
+                <div>
+                    <h2 className={styles.title}>
+                        Who we work with
+                    </h2>
+                    <p className={styles.description}>
+                        Today, millions of people around the world have successfully connected their accounts to apps
+                        they love using our API. We provide developers with the tools they need to create easy and
+                        accessible experiences for their users.
+                    </p>
 
-                <Button variants={'outline'}>
-                    About Us
-                </Button>
+                    <Button variants={'outline'}>
+                        About Us
+                    </Button>
+                </div>
             </Container>
         </section>
     );
