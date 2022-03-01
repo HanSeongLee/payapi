@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .main {
   position: relative;
@@ -13,6 +14,10 @@
     background-size: 780px 780px;
     background-position: 50% -550px;
     content: "";
+
+    @include media(">desktop") {
+      background-position: top -170px right -150px;
+    }
   }
 
   header, section, footer {
