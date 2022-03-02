@@ -16,6 +16,13 @@
       letter-spacing: -0.185px;
       margin-bottom: 13px;
     }
+
+    @include media(">desktop") {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.25px;
+      margin-bottom: 16px;
+    }
   }
 
   .description {
@@ -27,6 +34,10 @@
     @include media(">tablet") {
       display: block;
       margin-bottom: 19px;
+    }
+
+    @include media(">desktop") {
+      margin-bottom: 8px;
     }
   }
 
@@ -44,6 +55,13 @@
       letter-spacing: -0.37px;
       margin-bottom: 21px;
     }
+
+    @include media(">desktop") {
+      font-size: 56px;
+      line-height: 72px;
+      letter-spacing: -0.43px;
+      margin-bottom: 24px;
+    }
   }
 
   .benefitContainer {
@@ -56,6 +74,10 @@
     border-bottom: 1px solid rgba(54, 83, 107, 0.25);
     margin-bottom: 24px;
     text-align: left;
+
+    @include media(">desktop") {
+      align-items: flex-start;
+    }
 
     .benefitItem {
       font-size: 16px;
@@ -73,6 +95,10 @@
           top: 0;
           left: -12px;
           content: url("/img/icon-check.svg");
+
+          @include media(">desktop") {
+            left: 0;
+          }
         }
       }
     }
