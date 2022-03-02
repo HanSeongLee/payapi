@@ -8,6 +8,10 @@
     padding: 75px 0 100px;
   }
 
+  @include media(">desktop") {
+    text-align: left;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -15,6 +19,10 @@
 
     @include media(">tablet") {
       grid-gap: 100px;
+    }
+
+    @include media(">desktop") {
+      grid-gap: 96px;
     }
   }
 
@@ -32,6 +40,12 @@
       letter-spacing: -0.37px;
       color: #36536B;
     }
+
+    @include media(">desktop") {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.43px;
+    }
   }
 
   .planContainer {
@@ -43,6 +57,10 @@
       justify-content: center;
       flex-direction: row;
       grid-gap: 10px;
+    }
+
+    @include media(">desktop") {
+      grid-gap: 30px;
     }
   }
 }
