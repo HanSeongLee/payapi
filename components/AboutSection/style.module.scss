@@ -8,10 +8,19 @@
     padding: 75px 0 100px;
   }
 
+  @include media(">desktop") {
+    padding: 82px 0 96px;
+    text-align: left;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
     grid-gap: 64px;
+
+    @include media(">desktop") {
+      grid-gap: 56px;
+    }
   }
 
   .title {
@@ -28,6 +37,14 @@
       letter-spacing: -0.37px;
       margin-bottom: -10px;
     }
+
+    @include media(">desktop") {
+      width: 730px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.43px;
+      margin-bottom: -5px;
+    }
   }
 
   .thumbnailContainer {
@@ -39,8 +56,24 @@
       margin: 92px 0 64px;
     }
 
+    @include media(">desktop") {
+      margin: 100px 0 72px;
+    }
+
     .thumbnail {
       width: 100%;
+    }
+  }
+
+  .companySummaryWrapper {
+    @include media(">desktop") {
+      margin-bottom: 16px;
+    }
+  }
+
+  .titledScheduleDemoFormWrapper {
+    @include media(">desktop") {
+      margin-top: 44px;
     }
   }
 }

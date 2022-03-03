@@ -24,6 +24,9 @@ const AboutSection: React.FC = () => {
 
             <Container className={styles.thumbnailContainer}>
                 <picture>
+                    <source srcSet={'/img/about/desktop/image-team-members.jpg'}
+                            media={'(min-width: 992px)'}
+                    />
                     <source srcSet={'/img/about/tablet/image-team-members.jpg'}
                             media={'(min-width: 767px)'}
                     />
@@ -36,7 +39,9 @@ const AboutSection: React.FC = () => {
             </Container>
 
             <Container className={styles.container}>
-                <CompanySummary/>
+                <div className={styles.companySummaryWrapper}>
+                    <CompanySummary/>
+                </div>
 
                 <DescriptionCard title={'The Culture'}
                                  description={'We strongly believe there\'s always an opportunity to learn from each other outside of day-to-day work, whether it\'s company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.'}
@@ -45,7 +50,9 @@ const AboutSection: React.FC = () => {
                                  description={' We\'re all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.'}
                 />
 
-                <TitledScheduleDemoForm/>
+                <div className={styles.titledScheduleDemoFormWrapper}>
+                    <TitledScheduleDemoForm/>
+                </div>
             </Container>
         </section>
     );
