@@ -11,6 +11,10 @@
     text-align: left;
   }
 
+  @include media(">desktop") {
+    grid-gap: 30px;
+  }
+
   .title {
     font-family: DM Serif Display;
     font-weight: normal;
