@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useCallback} from "react";
 import styles from './style.module.scss';
 import Container from "../Container";
 import PartnerContainer from "../../containers/PartnerContainer";
 import Button from "../Button";
-import Link from 'next/link';
+import {useRouter} from "next/router";
 
 const PartnersSection: React.FC = () => {
+    const router = useRouter();
+
+    const onAboutUsClick = useCallback(() => {
+        router.push('/about');
+    }, [router]);
+
     return (
         <section className={styles.partnersSection}>
             <Container className={styles.container}>
@@ -21,15 +27,11 @@ const PartnersSection: React.FC = () => {
                         accessible experiences for their users.
                     </p>
 
-                    <Link href={'/about'}
-                          prefetch={false}
+                    <Button variants={'secondary'}
+                            onClick={onAboutUsClick}
                     >
-                        <a>
-                            <Button variants={'secondary'}>
-                                About Us
-                            </Button>
-                        </a>
-                    </Link>
+                        About Us
+                    </Button>
                 </div>
             </Container>
         </section>
