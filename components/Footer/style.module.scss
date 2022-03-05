@@ -62,6 +62,16 @@
       flex-direction: row;
       grid-gap: 40px;
     }
+
+    @include media(">desktop") {
+      a {
+        transition: color 0.3s;
+
+        &:hover {
+          color: #FBFCFE;
+        }
+      }
+    }
   }
 
   .socialListContainer {
@@ -72,5 +82,19 @@
     font-size: 15px;
     line-height: 18px;
     color: rgba(251, 252, 254, 0.7);
+
+    @include media(">desktop") {
+      a {
+        svg path {
+          transition: fill 0.3s;
+        }
+
+        &:hover {
+          svg path {
+            fill: #DA6D97;
+          }
+        }
+      }
+    }
   }
 }
