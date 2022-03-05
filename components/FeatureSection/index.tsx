@@ -34,7 +34,9 @@ const FeatureSection: React.FC = () => {
                     />
                 </div>
 
-                <TitledScheduleDemoForm/>
+                <div className={styles.titledScheduleDemoFormContainer}>
+                    <TitledScheduleDemoForm/>
+                </div>
             </Container>
         </section>
     );

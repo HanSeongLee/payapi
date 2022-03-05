@@ -50,6 +50,13 @@
 
     @include media(">desktop") {
       grid-gap: 30px;
+      margin-top: -4px;
+    }
+  }
+
+  .titledScheduleDemoFormContainer {
+    @include media(">desktop") {
+      margin-top: -54px;
     }
   }
 }
