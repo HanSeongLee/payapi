@@ -3,6 +3,7 @@ import styles from './style.module.scss';
 import Container from "../Container";
 import PartnerContainer from "../../containers/PartnerContainer";
 import Button from "../Button";
+import Link from 'next/link';
 
 const PartnersSection: React.FC = () => {
     return (
@@ -20,9 +21,15 @@ const PartnersSection: React.FC = () => {
                         accessible experiences for their users.
                     </p>
 
-                    <Button variants={'secondary'}>
-                        About Us
-                    </Button>
+                    <Link href={'/about'}
+                          prefetch={false}
+                    >
+                        <a>
+                            <Button variants={'secondary'}>
+                                About Us
+                            </Button>
+                        </a>
+                    </Link>
                 </div>
             </Container>
         </section>
