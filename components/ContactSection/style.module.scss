@@ -8,6 +8,11 @@
     padding: 75px 0 100px;
   }
 
+  @include media(">desktop") {
+    padding: 82px 0 96px;
+    text-align: left;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -16,6 +21,10 @@
     @include media(">tablet") {
       align-items: center;
       grid-gap: 64px;
+    }
+
+    @include media(">desktop") {
+      align-items: initial;
     }
   }
 
@@ -34,11 +43,42 @@
       letter-spacing: -0.37px;
       margin-bottom: -10px;
     }
+
+    @include media(">desktop") {
+      width: 730px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.43px;
+      margin-bottom: -5px;
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 48px;
+
+    @include media(">tablet") {
+      align-items: center;
+      grid-gap: 64px;
+    }
+
+    @include media(">desktop") {
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 124px;
+      flex-wrap: wrap;
+      margin-bottom: 29px;
+    }
   }
 
   .contactFormContainer {
     @include media(">tablet") {
       width: 445px;
+    }
+
+    @include media(">desktop") {
+      min-width: 445px;
     }
   }
 
@@ -52,6 +92,10 @@
       grid-gap: 40px;
     }
 
+    @include media(">desktop") {
+      align-items: initial;
+    }
+
     .title {
       font-family: DM Serif Display;
       font-weight: normal;
@@ -59,6 +103,10 @@
       line-height: 32px;
       letter-spacing: -0.18px;
       color: rgba(54, 83, 107, 0.75);
+
+      @include media(">desktop") {
+        width: 445px;
+      }
     }
 
     .partnerContainer {

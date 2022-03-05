@@ -13,15 +13,17 @@ const ContactSection: React.FC = () => {
                     Submit a help request and we’ll get in touch shortly.
                 </h2>
 
-                <div className={styles.contactFormContainer}>
-                    <ContactFormContainer/>
-                </div>
+                <div className={styles.contents}>
+                    <div className={styles.contactFormContainer}>
+                        <ContactFormContainer/>
+                    </div>
 
-                <div className={styles.partnerWrapper}>
-                    <h3 className={styles.title}>
-                        Join the thousands of innovators already building with us
-                    </h3>
-                    <PartnerContainer className={styles.partnerContainer}/>
+                    <div className={styles.partnerWrapper}>
+                        <h3 className={styles.title}>
+                            Join the thousands of innovators already building with us
+                        </h3>
+                        <PartnerContainer className={styles.partnerContainer}/>
+                    </div>
                 </div>
 
                 <TitledScheduleDemoForm/>
