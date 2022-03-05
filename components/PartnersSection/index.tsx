@@ -20,7 +20,7 @@ const PartnersSection: React.FC = () => {
                         accessible experiences for their users.
                     </p>
 
-                    <Button variants={'outline'}>
+                    <Button variants={'secondary'}>
                         About Us
                     </Button>
                 </div>

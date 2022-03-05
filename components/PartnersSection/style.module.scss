@@ -45,6 +45,10 @@
       flex-direction: row-reverse;
       justify-content: space-between;
     }
+
+    > div {
+      position: relative;
+    }
   }
 
   .partnerContainer {

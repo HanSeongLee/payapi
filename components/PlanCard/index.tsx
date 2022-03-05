@@ -42,12 +42,8 @@ const PlanCard: React.FC<IProps> = ({ name, description, price, benefits }) => {
                     ))}
                 </ul>
 
-                <Button variants={'outline'}
-                        style={{
-                            color: '#36536B',
-                            borderColor: '#36536B',
-                            boxShadow: 'none',
-                        }}
+                <Button variants={'secondary'}
+                        color={'dark'}
                 >
                     Request Access
                 </Button>

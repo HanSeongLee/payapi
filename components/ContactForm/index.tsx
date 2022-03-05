@@ -114,13 +114,11 @@ const ContactForm: React.FC<IProps> = ({ onSubmit }) => {
                         )}
             />
 
-            <Button variants={'outline'}
+            <Button variants={'secondary'}
+                    color={'dark'}
                     type={'submit'}
                     style={{
-                        color: '#36536B',
-                        borderColor: '#36536B',
                         maxWidth: '152px',
-                        boxShadow: 'none',
                     }}
             >
                 Submit
