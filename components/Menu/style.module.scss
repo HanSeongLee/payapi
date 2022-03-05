@@ -74,9 +74,15 @@
       }
 
       @include media(">desktop") {
+        transition: color 0.3s;
+
         &:last-child {
           flex: 1;
           justify-content: flex-end;
+        }
+
+        &:hover {
+          color: #36536B;
         }
       }
     }
