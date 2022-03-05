@@ -32,7 +32,9 @@ const Menu: React.FC = () => {
                 <ul className={styles.menu}>
                     {pages?.map(({title, href}) => (
                         <li>
-                            <Link href={href}>
+                            <Link href={href}
+                                  prefetch={false}
+                            >
                                 <a>
                                     {title}
                                 </a>
