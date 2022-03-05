@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
                     </h2>
                     <ScheduleDemoFormContainer className={styles.scheduleDemoContainer}/>
                     <p className={styles.questions}>
-                        Have any questions? <Link href={'/contact'}><a>Contact Us</a></Link>
+                        Have any questions? <Link href={'/contact'} prefetch={false}><a>Contact Us</a></Link>
                     </p>
                 </div>
             </Container>

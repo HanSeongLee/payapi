@@ -9,7 +9,9 @@ type IProps = {
 
 const Logo: React.FC<IProps> = ({ invert }) => {
     return (
-        <Link href={'/'}>
+        <Link href={'/'}
+              prefetch={false}
+        >
             <a aria-label={'payapi'}>
                 {!invert ? (<LogoImage />) : (<LogoInvertedImage />)}
             </a>
