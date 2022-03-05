@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .main {
   position: relative;
@@ -11,8 +12,16 @@
     height: 100%;
     background: url("/img/bg-pattern-circle.svg") no-repeat;
     background-size: 780px 780px;
-    background-position: 50px -670px;
+    background-position: top -650px right -470px;
     content: "";
+
+    @include media(">tablet") {
+      background-position: top -440px right -520px;
+    }
+
+    @include media(">desktop") {
+      background-position: top -550px right -150px;
+    }
   }
 
   header, section, footer {
